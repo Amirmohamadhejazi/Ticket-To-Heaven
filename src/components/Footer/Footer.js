@@ -1,5 +1,12 @@
 import React from "react";
+import Scroll from 'react-scroll';
 
+var Link = Scroll.Link;
+var DirectLink = Scroll.DirectLink;
+var Element = Scroll.Element;
+var Events = Scroll.Events;
+var scroll = Scroll.animateScroll;
+var scrollSpy = Scroll.scrollSpy;
 export default class Footer extends React.Component {
     render() {
         return (
@@ -13,19 +20,19 @@ export default class Footer extends React.Component {
                         <div className="collapse navbar-collapse" id="collapsibleNavbarFooter">
                             <ul className="navbar-nav custom-navbar">
                                 <li className="nav-item">
-                                    <a data-easing="linear" className="nav-link" href="#page1">HOME</a>
+                                    <Link activeClass="active" to="page1" spy={true} smooth={true} duration={500} containerId="containerElement" className="nav-link active-scroll-header cursor-pointer">HOME</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a data-easing="linear" className="nav-link"  href="#page2">INTRODUCTION</a>
+                                    <Link activeClass="active" to="page2" spy={true} smooth={true} duration={500} containerId="containerElement" className="nav-link nav-tex cursor-pointer">INTRODUCTION</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a data-easing="linear" className="nav-link"  href="#page3">CHOOSE YOUR HEROS</a>
+                                    <Link activeClass="active" to="page3" spy={true} smooth={true} duration={500} containerId="containerElement" className="nav-link nav-tex  cursor-pointer">CHOOSE YOUR HEROS</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a data-easing="linear" className="nav-link"   href="#page4">MAPS AND TRAPS</a>
+                                    <Link activeClass="active" to="page4" spy={true} smooth={true} duration={500} containerId="containerElement" className="nav-link nav-tex cursor-pointer">MAPS AND TRAPS</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a data-easing="linear" className="nav-link"  href="#page5">CONTACT US</a>
+                                    <Link activeClass="active" to="page5" spy={true} smooth={true} duration={500} containerId="containerElement" className="nav-link nav-tex cursor-pointer">CONTACT US</Link>
                                 </li>
                             </ul>
                         </div>
